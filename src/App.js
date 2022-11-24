@@ -1,16 +1,24 @@
 
 /* import './App.css'; */
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Container } from '@mui/material';
 import Searcher from "./Search/Searcher";
+import getGitHubUser from './Serivice/user';
 
 function App() {
 
   const [inputUser, setInputUser]= useState('octocal');
   const[userStater, userState]= useState('imputUser');
   
+const gettinUser= async (user)=>{
+  const userResponse = await getGitHubUser(user)
+}
 
+useEffect(()=>{
+  gettinUser(inputUser)
+},
+[])
 
 
   return (
