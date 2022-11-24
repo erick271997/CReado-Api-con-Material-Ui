@@ -9,7 +9,7 @@ function App() {
 
   const [inputUser, setInputUser]= useState('octocal');
   const[userStater, userState]= useState('imputUser');
-  console.log('inputUser'. inputUser);
+  
 
 
 

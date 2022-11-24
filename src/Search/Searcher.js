@@ -19,7 +19,7 @@ const Searcher= (props)=>{
         setValueinput(inputValue);
     }
 
-    console.log('valueInpu', valueinput);
+    
 
     const handleSubmit=()=>{
         setInputUser(valueinput);
